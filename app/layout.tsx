@@ -3,9 +3,9 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Redirect ORO PURO",
-  description: "Redirect ORO PURO",
-  generator: "ORO PURO",
+  title: "Redirect Money ",
+  description: "Redirect MoneyMaker",
+  generator: "MoneyMaker",
 };
 
 export default function RootLayout({
@@ -63,7 +63,7 @@ export default function RootLayout({
                 // Asociar evento fbq al botón
                 hiddenBtn.addEventListener("click", function () {
                   if (typeof window.fbq === "function") {
-                    fbq("track", "Lead", {
+                    fbq("track", "StartTrial", {
                       content_name: "WhatsApp Redirect",
                       value: 0,
                       currency: "USD",
